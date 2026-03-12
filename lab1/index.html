@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+<title>Sarbesh Kumar | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Sarbesh Kumar</h1>
+<img src="kk.jpg" 
+style="position:absolute; right:20px; top:20px; width:110px; height:110px; border-radius:50%; object-fit:cover; border:3px solid white;" data-aos="zoom-in">
+<p>Student | Web Programming Lab Portfolio</p>
+
+<nav>
+<a href="#about">About</a>
+<a href="#routine">Class Routine</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="about" data-aos="fade-up">
+<h2>About Me</h2>
+<p>
+I am Sarbesh Kumar. I am a student interested in web development,
+data science and programming. This portfolio is created for my
+Web Programming Lab assignment.
+</p>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
+
+<section id="routine" data-aos="fade-left">
+<h2>My Class Routine</h2>
+
+<button onclick="showRoutine()">Show Class Routine</button>
+
+<div id="routineTable" class="hidden">
+
+<table>
+ <tr>
+        <th>DAYS / TIME</th>
+        <th>07:00 - 07:50</th>
+        <th>07:50 - 08:40</th>
+        <th>08:40 - 09:30</th>
+        <th>09:30 - 10:20</th>
+        <th>10:20 - 11:10</th>
+        <th>11:10 - 12:00</th>
+        <th>12:00 - 12:50</th>
+        <th>12:50 - 13:40</th>
+        <th>13:40 - 14:30</th>
+        <th>14:30 - 15:20</th>
+    </tr>
+
+    <!-- Sunday -->
+    <tr>
+        <th>SUNDAY</th>
+          <td colspan="3">
+            Database Management System<br>
+            CT652<br>NiA<br>
+        </td>
+      
+        <td>N/A</td>
+        
+        <td colspan = '2'>Computer Networks and Security<br>CT702<br>AKC</td>
+        <td></td>
+        
+        <td>Computer Organization and Architecture<br>CT603<br>AS</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <!-- Monday -->
+    <tr>
+        <th>MONDAY</th>
+        <td colspan = '2'>Web Application Programming<br>CT302<br>UP</td>
+        <td></td>
+        <td>N/A</td>
+     
+        <td colspan = '3'>Computer Networks and Security<br>CT702<br>AKC + BiD<br>A-207 - Y</td>
+        
+        <td colspan = '2'>Advance Python Programming for Data Science<br>ENCT 325<br>AKK</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <!-- Tuesday -->
+    <tr>
+        <th>TUESDAY</th>
+        <td colspan = '2'>Database Management System<br>CT652<br>NiA</td>
+        <td colspan = '2'>Web Application Programming<br>CT302<br>UP</td>
+        <td>N/A</td>
+        
+        <td colspan = '2'>Probability and Statistics<br>SH602<br>DDG</td>
+      
+        <td colspan="3">
+            Web Application Programming (LAB)<br>
+            CT302<br>SAS + PRT<br>COMP-II - Y
+        </td>
+    </tr>
+
+    <!-- Wednesday -->
+    <tr>
+        <th>WEDNESDAY</th>
+        <td colspan = '2'>Computer Organization and Architecture<br>CT603<br>AS</td>
+        <td></td>
+        <td>Computer Networks and Security<br>CT702<br>AKC</td>
+        <td></td>
+        <td colspan = '2'>Advance Python Programming for Data Science<br>ENCT 325<br>AKK</td>
+        
+        <td colspan="3">
+            Computer Organization and Architecture (LAB)<br>
+            CT603<br>AS + PRT<br>COMP-IV - Y<br><br>
+            Minor Project (LAB)<br>
+            CT654<br>AS + RK<br>COMP-IV - Y/Z
+        </td>
+    </tr>
+
+    <!-- Thursday -->
+    <tr>
+        <th>THURSDAY</th>
+        <td colspan = '2'>Computer Networks and Security<br>CT702<br>AKC</td>
+        <td colspan = '2'>Probability and Statistics<br>SH602<br>DDG</td>
+        <td>N/A</td>
+       
+        <td colspan = '2'>Computer Organization and Architecture<br>CT603<br>AS</td>
+      
+        <td colspan="3">
+            Database Management System (LAB)<br>
+            CT652<br>PRT + NiA<br>COMP-I - Y/Z
+        </td>
+    </tr>
+
+</table>
+
+</div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<p id="formMessage"></p>
+
+</section>
+
+<footer>
+<p>© 2026 Sarbesh Kumar | Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
